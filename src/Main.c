@@ -42,7 +42,7 @@ void Setup(AlxWindow* w){
 					NULL
 				}
 			),
-			"Are you dumb? What do you choose?...",
+			"Are you a programmer? What do you choose?...",
 			0.5f
 		)
 	);
@@ -236,13 +236,11 @@ void Update(AlxWindow* w){
 	}
 
 
+	Clear(BLUE);
 
-	Clear(WHITE);
-	
-
-	Vec2 bg_p = TransformedView_WorldScreenPos(&tv,(Vec2){ 0.0f,0.0f });
-	Vec2 bg_d = TransformedView_WorldScreenLength(&tv,(Vec2){ 1.0f,1.0f });
-	RenderRect(bg_p.x,bg_p.y,bg_d.x,bg_d.y,BLUE);
+	//Vec2 bg_p = TransformedView_WorldScreenPos(&tv,(Vec2){ 0.0f,0.0f });
+	//Vec2 bg_d = TransformedView_WorldScreenLength(&tv,(Vec2){ 1.0f,1.0f });
+	//RenderRect(bg_p.x,bg_p.y,bg_d.x,bg_d.y,BLUE);
 
 	Vec2 p = TransformedView_WorldScreenPos(&tv,rect.p);
 	Vec2 d = TransformedView_WorldScreenLength(&tv,rect.d);
